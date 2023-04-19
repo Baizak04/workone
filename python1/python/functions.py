@@ -55,3 +55,29 @@ def year(name):
 
 s_children = sorted(children, key=year)
 print(s_children)
+
+
+def add(x,y):
+    return x + y
+
+print(add('gweru', 'try'))
+
+
+def fact(n):
+    prod = 1
+    for i in range(1, n+1):
+        prod *= i
+    return prod
+print(fact(6))
+
+
+def get_user():
+    name = "alex"
+    age = 27
+    admin = False
+    return name, age, admin
+
+user = get_user()
+print(user[0])
+print(user[1])
+print(user[2])
