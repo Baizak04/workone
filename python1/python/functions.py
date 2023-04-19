@@ -81,3 +81,11 @@ user = get_user()
 print(user[0])
 print(user[1])
 print(user[2])
+
+
+# def personal_details():
+#     name, age = "Bekzat", 19
+#     address = "kyrgyzstan, Bishkek"
+#     print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+
+# personal_details()

@@ -1,34 +1,10 @@
+s = "hello world"
+print(len(s))
 
-name = 'World'
 
-s = 'hello {}'
-
-result = s.format(name)
-print(result)
-
-name = 'Baizak'
-number = 100
-
-result = f'{name} - {number}'
-print(result)
+w = "hello world"
+exict = "Hello" in s
+print(exict)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# def personal_details():
-#     name, age = "Bekzat", 19
-#     address = "kyrgyzstan, Bishkek"
-#     print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
-
-# personal_details()
