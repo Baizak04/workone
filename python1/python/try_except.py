@@ -8,3 +8,14 @@ def main():
         
 main()
 
+def div(a,b):
+    try:
+        print(a/b)
+    except ZeroDivisionError:
+        print("деление на ноль")
+    except TypeError:
+        print("невозможно выполнить деление, один из параметром не число")
+    finally:
+        print("мы делили " + str(a) + " на " + str(b))
+
+div("a",0)
