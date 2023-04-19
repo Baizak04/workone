@@ -4,3 +4,5 @@ name = 22.2
 name = "alex"
 
 print(type(name))
+
+
