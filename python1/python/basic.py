@@ -9,8 +9,18 @@ print(type(name))
 name = 23
 print(type(name))
 
+print(2 + 2)  # 4
+
+print(2 * 3)  # 6
+
+print(5 / 4)  #1.25
+
+print(2 ** 2)  #4
 
 
+x = input('Введите город: ')
+print('Город', x)
+print(type((x)))
 
 
 # import calendar
@@ -38,3 +48,5 @@ print(calendar.month(year, month))
    
 # print ("Calendar 2023 is : ")
 # print (calendar.calendar(2020))
+
+
