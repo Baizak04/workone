@@ -73,3 +73,10 @@ def div(a,b):
         print("мы делили " + str(a) + " на " + str(b))
 
 div("a",0)
+
+
+fruits = {'banana', 'orange', 'apple'} 
+try:
+    fruits.remove('orange')
+except KeyError:
+    print('такое имя не существует')
