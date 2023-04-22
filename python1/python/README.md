@@ -4,7 +4,7 @@
 Нужно много практиковаться. И не забывать о теории.  
 
 
-```
+```python
 string = "Какой-то текст"
 print(string)
 
@@ -14,3 +14,7 @@ print(string)
 
 это яблоко :apple:
 :banana: 
+
+```python
+print(hello world)
+```
