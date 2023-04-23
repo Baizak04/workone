@@ -7,6 +7,13 @@
 
 # if a:
 #     print('OK')
+
+i = 10
+
+if i == 10:
+    print(i)
+else:
+    print("i не равно 10")
     
 
 

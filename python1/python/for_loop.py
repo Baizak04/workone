@@ -4,8 +4,9 @@
 # for имя_переменной in имя итерируемого объекта:
 #     инструкции
 
-
-
+arr = [1, 2, 3, 4, 5]
+for i in arr:
+    print("Число {}".format(i))
 
 
 # children = ['arbuzov_1000', 'ivanov_2030', 'petrov_1255', 'Azat_2002']

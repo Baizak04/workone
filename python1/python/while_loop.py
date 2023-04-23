@@ -66,17 +66,23 @@
 # print('Вы потратили', count, 'попыток')
 
 
-a, b = 0, 1
-while a < 10:
-    print(a)
-    a, b = b, a + b
+# a, b = 0, 1
+# while a < 10:
+#     print(a)
+#     a, b = b, a + b
     
     
-n = int(input("введите число: "))
+# n = int(input("введите число: "))
 
-i = 1
-fact = 1
-while i <= n:
-    fact *= i
-    i += 1
-print("факториал равен числу", fact)
+# i = 1
+# fact = 1
+# while i <= n:
+#     fact *= i
+#     i += 1
+# print("факториал равен числу", fact)
+
+
+i = 10 
+while i > 0:
+    print(i)
+    i = i - 2

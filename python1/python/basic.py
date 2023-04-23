@@ -50,3 +50,5 @@ print(calendar.month(year, month))
 # print (calendar.calendar(2020))
 
 
+var = "hi"
+print(var)
