@@ -89,3 +89,9 @@ print(user[2])
 #     print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
 
 # personal_details()
+
+def div(a, b):
+    return a / b
+
+my_var = div
+print(type(my_var))
