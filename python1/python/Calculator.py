@@ -3,15 +3,15 @@ from tkinter import messagebox
 from tkinter import ttk
 
 root = Tk()
-root.title("Калькулятор")
+root.title("Calculator")
 
 # логика калькулятора
 def calc(key):
     global memory
     if key == "=":
 # исключаем написание букв
-        str1 = "-+0123456789.*/"
-        if calc_entry.get()[0] not in str1:
+        str = '-+0123456789.*/'
+        if calc_entry.get()[0] not in str:
             calc_entry.insert(END, "Первый символ не число!")
             messagebox.showerror("Ошибка!", "Вы ввели не число!")
 # Счет
