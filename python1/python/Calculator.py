@@ -23,7 +23,9 @@ def calc(key):
             messagebox.showerror("Ошибка!", "Проверь правильность данных")
 # очистить поле
     elif key == "C":
+  
         calc_entry.delete(0, END)
+
 # смена +-
     elif key == "-+":
         if "=" in calc_entry.get():
@@ -41,7 +43,6 @@ def calc(key):
             calc_entry.insert(END, key)                
 
 # создаем все кнопки
-
 bttn_list = [
     "7", "8", "9", "+", "-",
     "4", "5", "6", "*", "/",
