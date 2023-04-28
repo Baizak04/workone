@@ -82,7 +82,17 @@
 # print("факториал равен числу", fact)
 
 
-i = 10 
-while i > 0:
-    print(i)
-    i = i - 2
+# i = 10 
+# while i > 0:
+#     print(i)
+#     i = i - 2
+
+# while - lesson
+    
+print("угадай лучший город")
+
+response = ''
+while response != "Bishkek":
+    response = input("самый лучший город: ")
+
+print('ура угадал')
