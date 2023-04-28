@@ -44,3 +44,9 @@ print(workdays[1])
 #     print(item)
     
 # print(x)
+
+
+a = [1, 2, 3, 4, 5]
+start = int(input("начальный срез: "))
+end = int(input("конечный срез: "))
+print(a[start:end])
