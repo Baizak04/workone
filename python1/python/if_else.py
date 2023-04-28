@@ -45,3 +45,12 @@ else:
     print('что-то')
     
     
+# if lesson-1
+
+age = int(input("Ваш возраст?: "))
+if age < 18:
+    print("Ты еще мал! ")
+elif age >= 18:
+    print("Отлично!")
+elif age == 18:
+    print("Супер!")
