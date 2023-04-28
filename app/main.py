@@ -1,11 +1,11 @@
-import pytwhatkit
+import pywhatkit
 import os
 
 def send_message_inst():
     mobile = os.getenv('MOBILE')
     message = input('Введите текст сообщения: ')
    
-    pytwhatkit.sendwhatmsg(phone_no=mobile, message=message)
+    pywhatkit.sendwhatmsg(phone_no=mobile, message=message)
     
 def send_message():
     mobile = os.getenv('MOBILE')
@@ -13,7 +13,7 @@ def send_message():
     hour = int(input('Введите часы: '))
     minutes = int(input('Введите минуты: '))
     
-    pytwhatkit.sendwhatmsg(phone_no=mobile, message=message, time_hour=hour, time_main=minutes)
+    pywhatkit.sendwhatmsg(phone_no=mobile, message=message, time_hour=hour, time_main=minutes)
     
 def main():
     send_message()
