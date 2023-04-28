@@ -8,3 +8,4 @@ print(exict)
 
 
 
+print("google \n" *3)

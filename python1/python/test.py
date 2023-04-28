@@ -39,7 +39,9 @@ else:
         print(b)
     else:
         print(c)
+        
 
+# calculator:1
 
 while True:
     a = int(input('первое число: '))
