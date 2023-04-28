@@ -115,3 +115,11 @@ str = max(2, 15)
 print(str)
 
 line()
+
+
+def add(a, b):
+    return a + b
+
+print(add(1, 1))
+print(add('1', '1'))
+# print(add('1', 1))
