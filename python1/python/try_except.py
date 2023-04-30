@@ -80,3 +80,28 @@ try:
     fruits.remove('orange')
 except KeyError:
     print('такое имя не существует')
+    
+try:  
+    print(1/0)
+except ZeroDivisionError:
+    print("ты тупой")
+
+
+try:
+    sum_one = int(input("Введите целое число: "))
+    sum_two = int(input("Введите целое число: "))
+    print("a/b = ", sum_one/sum_two)
+except ValueError:
+    print("Нужно было ввести целое число!")
+except ZeroDivisionError:
+    print("На 0 делить нельзя!")
+    
+
+try:
+    a = int(input("Введите целое число: "))
+except:
+    print("Вы ввели не число!")
+else:
+    print("Вы ввели:", a)
+finally:
+    print("Я всегда здесь!")
