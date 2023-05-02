@@ -46,7 +46,33 @@ print(workdays[1])
 # print(x)
 
 
-a = [1, 2, 3, 4, 5]
-start = int(input("начальный срез: "))
-end = int(input("конечный срез: "))
-print(a[start:end])
+# a = [1, 2, 3, 4, 5]
+# start = int(input("начальный срез: "))
+# end = int(input("конечный срез: "))
+# print(a[start:end])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for i in range(1,11):
+    3
+    print(i, end=' ')

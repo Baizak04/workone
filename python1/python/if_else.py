@@ -8,44 +8,44 @@
 # if a:
 #     print('OK')
 
-i = 10
+# i = 12
 
-if i == 10:
-    print(i)
-else:
-    print("i не равно 10")
+# if i == 10:
+#     print(i)
+# else:
+#     print("i не равно 10")
     
 
 
-if 4 * 4 == 16:
-    print('Туура')
-else:
-    print('Туура эмес')
+# if 4 * 5 == 21:
+#     print('Туура')
+# else:
+#     print('Туура эмес')
     
 
 
 
-password = '123'
-user_input = '000000'
+# password = '123'
+# user_input = '123'
 
-if user_input == password:
-    print('Добро пожаловать')
-else:
-    print('Пароль не правильно')
+# if user_input == password:
+#     print('Добро пожаловать')
+# else:
+#     print('Пароль не правильно')
     
     
     
-sum = '12345678'
+# sum = '12345678'
 
-if len(sum) == 6:
-    print('длина 8')
-elif len(sum) == 6:
-    print('Длина 6')
-else: 
-    print('что-то')
+# if len(sum) == 6:
+#     print('длина 8')
+# elif len(sum) == 6:
+#     print('Длина 6')
+# else: 
+    # print('что-то')
     
     
-# if lesson-1
+# # if lesson-1
 
 age = int(input("Ваш возраст?: "))
 if age < 18:
