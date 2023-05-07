@@ -21,3 +21,12 @@ if a in cor_one:
     print("Нашел!")
 else:
     print("Не нашел!")
+    
+    
+    def test(npt):
+        #code..
+        
+        return
+    
+
+    

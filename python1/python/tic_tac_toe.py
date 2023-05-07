@@ -48,7 +48,7 @@ def main(board):
         if counter > 4:
             tmp = check_win(board)
             if tmp:
-                print(tmp, "Ты выйграл!")
+                print(tmp, "Ты выйграл! Молодец")
                 win = True
                 break
         if counter == 9:
