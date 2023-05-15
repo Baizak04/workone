@@ -23,4 +23,11 @@ elif name == 'Sammy':
 else:
     print("What is your name?")
 
+x = int(input())
+y = int(input())   
     
+if x > 0:
+    if y > 0:
+        print(...)
+    else:
+        print(...)
