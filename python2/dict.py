@@ -20,3 +20,11 @@ d = {'key1' : 100, 'key2' : 200, 'key3' : 300}
 print(d.items())
 
 
+
+capitals = {'russia': 'moscow',
+            'Ukraine': 'Kiew',
+            'USA': 'Washinngton'}
+
+for key, val in capitals.items():
+    print(key, val)
+
