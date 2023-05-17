@@ -18,3 +18,27 @@ print(Person.__dict__)
 
 #метод  __dict__ выводить словар 
 
+# practic
+
+class A:
+    x: float = 17.8
+    
+
+print(A.x)
+
+class B:
+    x: int = 15
+    y: int = 7
+    
+    
+print(getattr(B, 'x') + getattr(B, 'y'))
+print(getattr(B, 'z', 'такое нету'))
+
+
+class C:
+    pass
+
+
+setattr(C, 'x', 11)
+C.y = 'hello world'
+print(getattr(C, 'y').upper())
