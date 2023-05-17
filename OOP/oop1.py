@@ -46,3 +46,26 @@ class Hamster:
 tom = Hamster()
 del tom
 print(id(tom))
+
+
+class PersionCat:
+    breed = 'persian'  #attrinute of this class
+    age = 12.0   #float
+    
+    
+class SiberianCat:
+    breed = 'siberian'
+    age = 0.5
+    
+
+class BengalCat:
+    breed = 'bengal'
+    age = 2.0
+    
+    
+tom = PersionCat()
+garfield = SiberianCat
+maxim = BengalCat
+
+print(type(tom), type(garfield), type(maxim), sep='\n')
+print(isinstance(tom, PersionCat)) #принадлежит ли на класс 
