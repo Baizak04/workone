@@ -27,3 +27,22 @@ my_dog = Dog(breed='a', name='sam', spots=False)
 
 # print(my_dog)
 print(my_dog.breed, my_dog.name, my_dog.spots)
+
+
+
+class Person():
+    name = 'Baizak'
+    age = 18
+    
+    
+p_one = Person.age
+print(p_one)
+
+
+class Hamster:
+    color = 'white'
+    
+    
+tom = Hamster()
+del tom
+print(id(tom))
