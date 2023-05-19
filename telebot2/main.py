@@ -5,7 +5,7 @@ bot = telebot.TeleBot('6137537431:AAGQ4QRxm-ora8ItDVH5AWDqSqn8ZbUFyG4')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    mess = f'Привет, <b>{message.from_user.first_name} <u>{message.from_user.last_name}</u></b>'
+    mess = f'Привет,Я ваш персональный бот \n команды \n /start, /LinkedinBaizaka, /palindrome_leetcode, /AbstractBaseUser, /SQLRoadmap, /CreatedUser, /AbstractUser_YouTube  <b>{message.from_user.first_name} \n Выбирай полезные команды и начинай изучать \n <u>Удачи тебе 😊👍</u></b>'
     bot.send_message(message.chat.id, mess, parse_mode='html')
 
 
@@ -33,7 +33,7 @@ def get_user_photo(message):
 
     
 
-@bot.message_handler(commands=['website'])
+@bot.message_handler(commands=['LinkedinBaizaka'])
 def website(message):
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton("Посетить мой linkedin сайт", url="https://www.linkedin.com/in/baizak-nadurbekov/"))
@@ -51,6 +51,12 @@ def website(message):
     markup.add(types.InlineKeyboardButton("Посетить сайт django AbstractBaseUser", url="https://tproger.ru/translations/extending-django-user-model/"))
     bot.send_message(message.chat.id, 'Перейдите на сайт учить Django AbstractBaseUser', reply_markup=markup)
 
+
+@bot.message_handler(commands=['SQLRoadmap'])
+def website(message):
+    markup = types.InlineKeyboardMarkup()
+    markup.add(types.InlineKeyboardButton("Роадмап по SQL ", url="https://habr.com/ru/articles/725414/"))
+    bot.send_message(message.chat.id, 'Перейдите на сайт посмотреть на roadmap sql', reply_markup=markup)
 
 @bot.message_handler(commands=['CreatedUser'])
 def website(message):
