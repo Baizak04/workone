@@ -1,3 +1,6 @@
+# Itspace_kg Telegram Bot
+
+
 import telebot
 from currency_converter import CurrencyConverter
 from telebot import types
@@ -6,7 +9,7 @@ bot = telebot.TeleBot('6287454351:AAE4VdG2Fp0Pj0P8u4HIPegkldIi9T0_G8Q')
 currency = CurrencyConverter()
 amount = 0
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start_one'])
 def start(message):
     bot.send_message(message.chat.id, 'Привет введите сумму: ')
     bot.register_next_step_handler(message, summa)
@@ -32,5 +35,29 @@ def summa(message):
     else:
         bot.send_message(message.chat.id, 'Число должно быть больше за 0. Впишите сумму')
         bot.register_next_step_handler(message, summa)
-    
+        
+@bot.callback_query_handler(func=lambda call: True)
+def callback(call):
+    if call.data != 'else':
+        values = call.data.upper().split('/')
+        res = currency.convert(amount, values[0], values[1])
+        bot.send_message(call.message.chat.id, f'Получается: {round(res, 2)}. Можете заново вписать сумму')
+        bot.register_next_step_handler(call.message, summa)
+    else:
+        bot.send_message(call.message.chat.id, 'Введите пару значений через слеш')
+        bot.register_next_step_handler(call.message, my_currency)
+        
+        
+def my_currency(message):
+    try:
+        values = message.text.upper().split('/')
+        res = currency.convert(amount, values[0], values[1])
+        bot.send_message(message.message.chat.id, f'Получается: {round(res, 2)}. Можете заново вписать сумму')
+        bot.register_next_step_handler(message, summa)
+    except Exception:
+        bot.send_message(message.chat.id, 'Что-то не так. Впишите значение заново')
+        bot.register_next_step_handler(message, my_currency)
+        
+        
+        
 bot.polling(none_stop=True)

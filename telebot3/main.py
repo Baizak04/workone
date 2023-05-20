@@ -1,3 +1,6 @@
+# Itspace_kg Telegram Bot 
+
+
 import telebot
 import webbrowser
 
@@ -11,6 +14,8 @@ def site(message):
 @bot.message_handler(commands=['start'])
 def main(message):
     bot.send_message(message.chat.id, f"Здраствуйте, {message.from_user.first_name}")
+    
+
     
 @bot.message_handler(commands=['help'])
 def main(message):
