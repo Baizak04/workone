@@ -1,7 +1,5 @@
 # Itspace_kg Telegram Bot
 
-
-
 from aiogram import Bot, Dispatcher, executor, types
 
 bot = Bot('6287454351:AAE4VdG2Fp0Pj0P8u4HIPegkldIi9T0_G8Q')
