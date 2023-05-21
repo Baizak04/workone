@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 
 
 
-@dp.message_handler(commands=['start'])
+@dp.message_handler(commands=['startone'])
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
     markup.add(types.KeyboardButton('Открыть веб сайт', web_app=WebAppInfo(url='https://itproger.com/')))
