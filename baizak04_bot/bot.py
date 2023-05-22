@@ -1,5 +1,5 @@
 import telebot
-
+from telebot import types
 bot = telebot.TeleBot('6226915086:AAEN1Sr9j2RJnfrZrGXZKBkdEQwPQ7LoOEY')
 
 @bot.message_handler(commands=['starttwo'])
@@ -74,6 +74,12 @@ def hwo(message):
 def hwo(message):
     bot.reply_to(message, '<strong>Нет</strong>', parse_mode='html')
     
+def hwo_two(message):
+    return message.text == "Как дела?"
+
+@bot.message_handler(func=hwo_two)
+def hwo_two(message):
+    bot.reply_to(message, '<strong>так себе</strong> \n <b>А ты</>', parse_mode='html')
     
 @bot.message_handler(content_types=['photo'])
 def photo_one(message):
@@ -97,5 +103,36 @@ def sum_one(message):
 def itspace(message):
     bot.send_message(message.chat.id, '<i>itspace</i>' ,parse_mode='html')
      
+     
+@bot.message_handler(commands=['button'])
+def button(message):
+    kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
+    btn1 = types.KeyboardButton(text='кнопка один')
+    btn2 = types.KeyboardButton(text='кнопка два')
+    kb.add(btn1, btn2)
+    bot.send_message(message.chat.id, 'кнопки пока не работает', reply_markup=kb)
+
+
+@bot.message_handler(commands=['photo1'])
+def photo1(message):
+    file = open('photo1.jpg', 'rb')
+    bot.send_photo(message.chat.id, file, 'Фото для ноутбука')
+
+@bot.message_handler(commands=['photo2'])
+def photo2(message):
+    file = open('photo2.jpeg', 'rb')
+    bot.send_photo(message.chat.id, file, 'второе фото для ноутбука')
+
+@bot.message_handler(commands=['photo3'])
+def photo3(message):
+    file = open('photo3.jpg', 'rb')
+    bot.send_photo(message.chat.id, file, 'третое фото для ноутбука')
+
+@bot.message_handler(commands=['photo_anime'])
+def photo_anime1(message):
+    file = open('photo_anime1.jpeg', 'rb')
+    bot.send_photo(message.chat.id, file, 'Фото для аниме')
+
+bot.polling()
 
 bot.polling()
