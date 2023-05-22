@@ -28,6 +28,12 @@ def salam(message):
 def start(message):
     bot.reply_to(message, 'Ваалейкум салам. Мой хозяин занят на данный момент')
 
+def hwo_baizak(message):
+    return message.text == "Кто твой создатель?"
+
+@bot.message_handler(func=hwo_baizak)
+def hwo(message):
+    bot.reply_to(message, 'Мой создатель <strong>Байзак </strong> 😎', parse_mode='html')
 
 def salam(message):
     return message.text == "Привет"
@@ -85,6 +91,9 @@ def hwo_two(message):
 def photo_one(message):
     bot.send_message(message.chat.id, 'Вауу красивое фото 🤩')
 
+@bot.message_handler(content_types=['document'])
+def document_one(message):
+    bot.send_message(message.chat.id, '<b>Спасибо</b> за информацию \n <em>ты лучший бро</em> 👍', parse_mode='html')
 
 @bot.message_handler(content_types=['voice'])
 def audio_one(message):
@@ -95,9 +104,9 @@ def audio_one(message):
 def video_one(message):
     bot.send_message(message.chat.id, 'щяс... \n загрузка \n ну нормальное видео 😏')
 
-@bot.message_handler(regexp=r'[0-9]+')
-def sum_one(message):
-    bot.send_message(message.chat.id, 'Ты что шитать не умеешь \n Научис шитать')
+# @bot.message_handler(regexp=r'[0-9]+')
+# def sum_one(message):
+    # bot.send_message(message.chat.id, 'Ты что шитать не умеешь \n Научис шитать')
 
 @bot.message_handler(commands=['itspace'])
 def itspace(message):
