@@ -101,7 +101,7 @@ def sum_one(message):
 
 @bot.message_handler(commands=['itspace'])
 def itspace(message):
-    bot.send_message(message.chat.id, '<i>itspace</i>' ,parse_mode='html')
+    bot.send_message(message.chat.id, '<i>itspace</i>',parse_mode='html')
      
      
 @bot.message_handler(commands=['button'])
@@ -140,6 +140,17 @@ def photo3(message):
 def photo_anime1(message):
     file = open('photo_anime1.jpeg', 'rb')
     bot.send_photo(message.chat.id, file, 'Фото для аниме')
+
+
+@bot.message_handler(commands=['switch'])
+def switch(message):
+    kb = types.InlineKeyboardMarkup()
+    switch = types.InlineKeyboardButton(text='Выбрат чат', switch_inline_query='Тур эй сасыбай 😂😂😂')
+    kb.add(switch)
+    bot.send_message(message.chat.id, 'Сообщение', reply_markup=kb)
+
+
+
 
 bot.polling()
 
