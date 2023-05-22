@@ -175,7 +175,14 @@ def check_callback_data(callback):
         kb.add(btn, btn1)
         bot.edit_message_text(chat_id=callback.message.chat.id, message_id=callback.message.id, text='хихих 😂 \n Предупреждения!!! дальше ничего не нажимай', reply_markup=kb)    
 
-
+@bot.message_handler(commands=['swit'])
+def switch(message):
+    markup = types.InlineKeyboardMarkup()
+    url = types.InlineKeyboardButton(text='URL', url='https://www.edx.org/')
+    switch = types.InlineKeyboardButton(text='Swit', switch_inline_query='hello 👨🏻‍💻')
+    callback = types.InlineKeyboardButton(text='Callback', callback_data='hello')
+    markup.add(url, switch, callback)
+    bot.send_message(message.chat.id, 'Сообщение 👨🏻‍💻', reply_markup=markup)
 
 bot.polling()
 
