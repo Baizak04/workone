@@ -37,3 +37,24 @@ if __name__ == 'main.py':
     fedor.info()
     fedor.earn_money(10_000)
     a = 0
+    
+    
+class Table:
+    def __init__(self, l, w, h):
+        self.length = l
+        self.widht = w
+        self.height = h
+        
+class DeskTable(Table):
+    def square(self):
+        return self.widht * self.length
+    
+
+class ComputerTable(DeskTable):
+    def square(self, monitor=0.0):
+        return self.widht * self.length - monitor
+    
+    
+t3 = ComputerTable(0.5, 0.6, 0.7)
+print(t3.square(0.8))
+    
