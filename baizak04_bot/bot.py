@@ -232,4 +232,35 @@ def sticer_casino(message):
     bot.send_dice(message.chat.id, '🎰')
 
 
+@bot.message_handler(commands=['location'])
+def location(message):
+    bot.send_location(message.chat.id, 42.000012,74.000017)
+
+@bot.message_handler(commands=['contact'])
+def contact(message):
+    bot.send_contact(message.chat.id, phone_number=+996501751998, first_name='Baizak', last_name='Nadurbekov')
+
+@bot.message_handler(commands=['contact_alt'])
+def contact_alt(message):
+    bot.send_contact(message.chat.id, phone_number=+996708153711, first_name='A', last_name='')
+
+
+@bot.message_handler(commands=['contact_ashurbaev'])
+def contact_ashurbaev(message):
+    bot.send_contact(message.chat.id, phone_number=+996507273703, first_name='Akul', last_name='Ashurbaev')
+
+@bot.message_handler(commands=['contact_ashurbaev2'])
+def contact_ashurbaev2(message):
+    bot.send_contact(message.chat.id, phone_number=+9965770771888, first_name='Akul', last_name='Ashurbaev')
+
+
+
+@bot.message_handler(commands=['polls'])
+def polls(message):
+    bot.send_poll(message.chat.id, question='сколько вам лет?', options=['14', '55', 'не скажу'], allows_multiple_answers=False, is_anonymous=True)
+
+
+
+
+
 bot.polling() 
