@@ -199,4 +199,37 @@ def django_txt(message):
         bot.send_message(message.chat.id, mess)
         
         
-bot.polling()
+# @bot.message_handler(commands=['pdf'])
+# def pdf(message):
+#     file = open('Python_Полное_руководство.pdf', 'r', encoding='utf-8').read()
+#     ot.send_document(message.chat.id, file, 'pdf')  
+
+@bot.message_handler(func=lambda message: message.text.lower() in ['файл'])
+def echo_all(message):
+    bot.reply_to(message, 'Загрузка файла')
+    file = open('file.rar', 'rb')
+    bot.send_document(message.chat.id, file)
+
+@bot.message_handler(commands=['sticer_football'])
+def sticer(message):
+    bot.send_dice(message.chat.id, '⚽️')
+
+
+@bot.message_handler(commands=['sticer_basketball'])
+def sticer_basketball(message):
+    bot.send_dice(message.chat.id, '🏀')
+
+@bot.message_handler(commands=['sticer_2'])
+def sticer_2(message):
+    bot.send_dice(message.chat.id, '🎯')
+    
+@bot.message_handler(commands=['sticer_bowling'])
+def sticer_bowling(message):
+    bot.send_dice(message.chat.id, '🎳')
+    
+@bot.message_handler(commands=['sticer_casino'])
+def sticer_casino(message):
+    bot.send_dice(message.chat.id, '🎰')
+
+
+bot.polling() 
