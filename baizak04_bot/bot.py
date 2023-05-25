@@ -257,10 +257,16 @@ def contact_ashurbaev2(message):
 
 @bot.message_handler(commands=['polls'])
 def polls(message):
-    bot.send_poll(message.chat.id, question='сколько вам лет?', options=['14', '55', 'не скажу'], allows_multiple_answers=False, is_anonymous=True)
+    bot.send_poll(message.chat.id, question='сколько вам лет?', options=['17', '18', '19', '20', '21' 'не скажу'], allows_multiple_answers=False, is_anonymous=True)
 
+@bot.message_handler(commands=['photosh'])
+def photosh(message):
+    photos = bot.get_user_profile_photos(message.chat.id)
+    bot.send_photo(message.chat.id, photos.photos[0][0].file_id)
 
-
+@bot.edited_message_handler(func=lambda message: True)
+def send_message(message):
+    bot.send_message(message.chat.id, 'hello')
 
 
 bot.polling() 
