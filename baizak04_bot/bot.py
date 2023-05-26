@@ -194,7 +194,7 @@ def switch(message):
 
 @bot.message_handler(commands=['python'])
 def python_txt(message):
-    text = open('python.txt', 'r', encoding="utf8").read()
+    text = open('txt/python.txt', 'r', encoding="utf8").read()
     for mess in util.smart_split(text, 3000):
         bot.send_message(message.chat.id, mess)
 
