@@ -121,13 +121,13 @@ def itspace(message):
     bot.send_message(message.chat.id, '<i>itspace</i>',parse_mode='html')
      
      
-@bot.message_handler(commands=['button'])
-def button(message):
-    kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
-    btn1 = types.KeyboardButton(text='кнопка один')
-    btn2 = types.KeyboardButton(text='кнопка два')
-    kb.add(btn1, btn2)
-    bot.send_message(message.chat.id, 'кнопки пока не работает', reply_markup=kb)
+# @bot.message_handler(commands=['button'])
+# def button(message):
+#     kb = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
+#     btn1 = types.KeyboardButton(text='кнопка один')
+#     btn2 = types.KeyboardButton(text='кнопка два')
+#     kb.add(btn1, btn2)
+#     bot.send_message(message.chat.id, 'кнопки пока не работает', reply_markup=kb)
 
 
 @bot.message_handler(commands=['links'])
@@ -140,22 +140,22 @@ def button_one(message):
 
 @bot.message_handler(commands=['photo1'])
 def photo1(message):
-    file = open('photo1.jpg', 'rb')
+    file = open('img/photo1.jpg', 'rb')
     bot.send_photo(message.chat.id, file, 'Фото для ноутбука')
 
 @bot.message_handler(commands=['photo2'])
 def photo2(message):
-    file = open('photo2.jpeg', 'rb')
+    file = open('img/photo2.jpeg', 'rb')
     bot.send_photo(message.chat.id, file, 'второе фото для ноутбука')
 
 @bot.message_handler(commands=['photo3'])
 def photo3(message):
-    file = open('photo3.jpg', 'rb')
+    file = open('img/photo3.jpg', 'rb')
     bot.send_photo(message.chat.id, file, 'третое фото для ноутбука')
 
 @bot.message_handler(commands=['photo_anime'])
 def photo_anime1(message):
-    file = open('photo_anime1.jpeg', 'rb')
+    file = open('img/photo_anime1.jpeg', 'rb')
     bot.send_photo(message.chat.id, file, 'Фото для аниме')
 
 
@@ -200,7 +200,7 @@ def python_txt(message):
 
 @bot.message_handler(commands=['django'])
 def django_txt(message):
-    text = open('django.txt', 'r', encoding="utf8").read()
+    text = open('txt/django.txt', 'r', encoding="utf8").read()
     for mess in util.smart_split(text, 3000):
         bot.send_message(message.chat.id, mess)
         
