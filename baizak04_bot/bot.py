@@ -44,19 +44,6 @@ def salam(message):
 def start(message):
     bot.reply_to(message, 'Привет дорогуша')
 
-def jan(message):
-    return message.text == "Жан"
-
-@bot.message_handler(func=jan)
-def jan(message):
-    bot.reply_to(message, 'оуу жаным угуп жатам 😊')
-    
-def good_morning(message):
-    return message.text == "Доброе утро жан"
-
-@bot.message_handler(func=good_morning)
-def good_morning(message):
-    bot.reply_to(message, 'Доброе ❤️')
     
 
 def what(message):
@@ -247,11 +234,11 @@ def contact_alt(message):
 
 @bot.message_handler(commands=['contact_ashurbaev'])
 def contact_ashurbaev(message):
-    bot.send_contact(message.chat.id, phone_number=+996507273703, first_name='Akul', last_name='Ashurbaev')
+    bot.send_contact(message.chat.id, phone_number=+12, first_name='Akul', last_name='Ashurbaev')
 
 @bot.message_handler(commands=['contact_ashurbaev2'])
 def contact_ashurbaev2(message):
-    bot.send_contact(message.chat.id, phone_number=+9965770771888, first_name='Akul', last_name='Ashurbaev')
+    bot.send_contact(message.chat.id, phone_number=+12, first_name='Akul', last_name='Ashurbaev')
 
 
 
@@ -268,5 +255,10 @@ def photosh(message):
 def send_message(message):
     bot.send_message(message.chat.id, 'hello')
 
+@bot.message_handler(commands=['startthree'])
+def startthree(message):
+    chat_id = message.chat.id
+    first_name = message.chat.first_name
+    bot.send_message(chat_id, f'Привет чем могу помочь {first_name} 😜!')
 
 bot.polling() 
