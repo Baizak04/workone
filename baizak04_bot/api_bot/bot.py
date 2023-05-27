@@ -275,9 +275,16 @@ def get_user_text(message):
     elif message.text == "Когда спать?":
         sleep(1)
         bot.send_message(message.chat.id, 'Я не буду спать \n я буду охранят вас до утра')
-    elif message.text == "Ты хочешь меня на делекатес ?":
+    elif message.text == "Ты хочешь меня на делекатес?":
         sleep(1)
         bot.send_message(message.chat.id, 'Категорически нет. 🙅🏻‍♀️')
+    elif message.text == "Где ты родилась?":
+        sleep(1)
+        bot.send_message(message.chat.id, 'Я родилась в стране Кыргызстан 🇰🇬 город Бишкек')
+    elif message.text == "Кто ты по жизни?":
+        sleep(1)
+        bot.send_message(message.chat.id, 'Я просто человек, который прекрасно знает свое место в мире и стремится к большему 😎 .')
+ 
  
     elif message.text == "photo":
         photo = open('api_bot/img/linux.jpg', 'rb')
