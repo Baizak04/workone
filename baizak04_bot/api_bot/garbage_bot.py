@@ -1,3 +1,12 @@
+import telebot
+from telebot import types
+from telebot import util
+import random
+from time import sleep
+
+bot = telebot.TeleBot('6226915086:AAEN1Sr9j2RJnfrZrGXZKBkdEQwPQ7LoOEY')
+
+
 @bot.message_handler(regexp=r'[0-9]+')
 def sum_one(message):
     bot.send_message(message.chat.id, 'Ты что шитать не умеешь \n Научис шитать')
@@ -32,3 +41,6 @@ def check_callback_data(callback):
         btn1 = types.InlineKeyboardButton(text='салам', callback_data='btn1')
         kb.add(btn, btn1)
         bot.edit_message_text(chat_id=callback.message.chat.id, message_id=callback.message.id, text='хихих 😂 \n Предупреждения!!! дальше ничего не нажимай', reply_markup=kb)    
+
+
+bot.polling()
