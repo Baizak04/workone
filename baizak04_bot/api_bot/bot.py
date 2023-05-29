@@ -155,6 +155,12 @@ def django_txt(message):
     for mess in util.smart_split(text, 3000):
         bot.send_message(message.chat.id, mess)
         
+@bot.message_handler(commands=['variables'])
+def django_txt(message):
+    text = open('api_bot/txt/variables.txt', 'r', encoding="utf8").read()
+    for mess in util.smart_split(text, 3000):
+        bot.send_message(message.chat.id, mess)
+        
 @bot.message_handler(commands=['good_habits'])
 def good_habits_txt(message):
     text = open('api_bot/txt/good_habits.txt', 'r', encoding="utf8").read()
