@@ -34,3 +34,18 @@ def step2():
     print('Это шаг3')
     
 main()
+
+
+def main_two():
+    texas()
+    california()    
+def texas():
+    birds = 5000
+    print(f'В течасе обитает {birds} птиц')
+    
+def california():
+    birds = 8000
+    print(f'В каливорние обитает {birds} птиц')   
+    
+     
+main_two()
