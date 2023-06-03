@@ -49,3 +49,30 @@ def california():
     
      
 main_two()
+
+
+def main_three():
+    value = 5
+    show_double(value)
+    
+def show_double(numbers):
+    result = numbers * 2
+    print(result)
+    
+main_three()
+
+
+def main_six():
+    intro()
+    cups_needed = int(input('Введите число чашек: '))
+    cups_to_ounces(cups_needed)
+    
+def intro():
+    print('Что-то')
+    
+def cups_to_ounces(cups):
+    ounces = cups * 8
+    print(f'Число конвертируется в {ounces} унции')
+    
+main_six()
+    
