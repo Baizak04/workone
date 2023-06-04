@@ -19,3 +19,13 @@ original_price = float(input("Введите исходную цену това�
 discount = original_price * 2.2
 sala_price = original_price - discount
 print('Отпускная цена составляет', sala_price)
+
+
+a = input()
+b = input()
+
+print((a + b) * 5) 
+
+sum = int(input('Введите 1-ое число: '))
+sum_two = int(input('Введите 2-ое число: '))
+print(f'{sum} + {sum_two} = {sum + sum_two}')
