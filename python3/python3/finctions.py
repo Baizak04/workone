@@ -35,7 +35,7 @@ def step2():
     
 main()
 
-
+# 3)
 def main_two():
     texas()
     california()    
@@ -50,7 +50,7 @@ def california():
      
 main_two()
 
-
+# 4)
 def main_three():
     value = 5
     show_double(value)
@@ -61,7 +61,7 @@ def show_double(numbers):
     
 main_three()
 
-
+# 5)
 def main_six():
     intro()
     cups_needed = int(input('Введите число чашек: '))
@@ -76,3 +76,14 @@ def cups_to_ounces(cups):
     
 main_six()
     
+    
+# 6)
+def main_fo():
+    print('Сумма чисел 12 и 45 равнеятся')
+    show_sum(12, 45)
+    
+def show_sum(num1, num2):
+    result_sum = num1 + num2
+    print(result_sum)
+    
+main_fo()
