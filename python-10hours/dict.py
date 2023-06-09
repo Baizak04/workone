@@ -13,6 +13,15 @@ print(my_disk.items())
 print(my_disk.values())
 print(list(my_disk.keys()))
 print(my_disk.popitem())
-print(my_disk.get('tyo'))     # если нет пары то будеть None
-# print(my_disk['model'])         # если нет пары то будеть ошибка
+print(my_disk.get('tyo'))       # если нет пары то будеть None
+print(my_disk['model'])         # если нет пары то будеть ошибка
+
+
+# 2)
+
+my_list = [['first', 0], ['second', True]]
+
+my_dict = dict(my_list)
+print(my_dict)
+# 
 
