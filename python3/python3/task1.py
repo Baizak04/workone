@@ -88,3 +88,28 @@ print(func())
 
 # 15)
 print(print())        # None
+
+# 16)
+a_list = [1, '1', 0, None, False]
+result = list(filter(None, a_list)) 
+print(result)
+
+# 17)
+a_dict = {}
+a_dict[1] = 'foo'
+a_dict[True] = 'bar'
+print(a_dict)
+
+# 18)
+var = 1,
+var_2 = (1)
+print(var, var_2)
+
+# 19)
+for v in range(3):
+    print(v)
+    if v == 3:
+        break
+else:
+    print(10)
+        
