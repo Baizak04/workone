@@ -56,3 +56,35 @@ print(z)
 s = set('any')
 s.add('data')
 print(s)
+
+# 11)
+
+a = 1j
+print(bool(a))
+
+print(type(1 / 2))
+
+# 12)
+def main():
+    return 2
+
+main.value = main() + 1
+print(main.value, end=' ')
+print(main())
+
+# 13)
+def func(lst=[]):
+    lst.append(1)
+    return lst
+
+func()
+func()
+print(func())
+
+# 14)
+# foo = [3, 1, 2]
+# foo = foo + 3
+# print(foo)          #error
+
+# 15)
+print(print())        # None
