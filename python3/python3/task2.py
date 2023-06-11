@@ -74,3 +74,29 @@ for i in x:
     i.upper()
     
     print(x)
+    
+# 11)
+a_list = [1,2,3]
+print(a_list[1:8])
+
+# 12)
+example = "snow world"
+print("%s" % example[4:7])
+
+# 13)
+a = {3,4,5}
+a.update([1,2,3])
+print(a)
+
+# 14)
+i = 0
+while i < 3:
+    print(i)
+    i += 1
+else:
+    print(0)
+    
+# 15)
+list1 = [1, 2, 3]
+list1 = list1 * 2
+print(list1)   
