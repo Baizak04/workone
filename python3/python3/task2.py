@@ -42,3 +42,35 @@ def outer():
         
 outer() 
         
+# 6)
+def outer(a_list):
+    def inner(a_list):
+        a_list.append(10)
+        return a_list
+
+    return a_list
+
+
+print(outer([]))
+
+# 7)
+# a_dict = {}
+# first_tuple = (1, 2)
+# second_tuple = (3,[1, 2])
+# a_dict[first_tuple] = 1
+# a_dict [second_tuple] = 2
+# print(a_dict)                     # Error
+
+# 8)
+# k = [print(i) for i in my_string if i
+# not in "aeiou"]                    # Error
+
+# 9)
+print(r"\n hello")
+
+# 10)
+x = ['ab', 'cd']
+for i in x:
+    i.upper()
+    
+    print(x)
