@@ -99,4 +99,37 @@ else:
 # 15)
 list1 = [1, 2, 3]
 list1 = list1 * 2
-print(list1)   
+print(list1)  
+
+# 16)
+a = (1,2,(4,5,))
+b = (1,2,(3,4))
+print(a < b)
+
+# 17)
+def foo(fname, val):
+    print(fname(val))
+    
+print(foo(max, [1,2,3]))
+print(foo(min, [1,2,3]))    
+
+# 18)    
+a = (0, 1, 2, 3, 4)
+b = slice(0, 2)
+print(a[b])
+
+# 19)
+# def foo(x):
+#     x = ['def', 'abc']
+#     return id(x)
+
+# q = ['abc', 'def']
+# print(id(q) == foo()) #Error
+
+# 20)
+def foo(i, x=[]):
+    x.append(i)
+    return x
+for i in range(3):
+    print(foo(i))
+    
