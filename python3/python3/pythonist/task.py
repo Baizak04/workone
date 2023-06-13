@@ -46,3 +46,41 @@ for i in a:
  if i > 3:
   pass
  print(i)
+ 
+# 6)
+def add_three(x,y):
+    return x + y
+li = [1,2,3,5]
+sum_reduce = reduce(add_three, li)
+print(sum_reduce)
+
+# 7)
+item = [n*2 for n in range(10)]
+print(item)
+
+# 8)
+item = {n: n*2 for n in range(10)}
+print(item)
+
+# 9)
+def print_msg(msg):
+    # объемлющая функция
+    def printer():
+        # вложенная функция
+        print(msg)
+    printer()
+print_msg("Hello")
+
+# 10)
+def print_msg(msg):
+    # объемлющая функция
+    
+    
+    def printer():
+        # вложенная функция
+        print(msg)
+    return printer  # возвращаем вложенную функцию
+
+
+another = print_msg("Hello")
+another()
