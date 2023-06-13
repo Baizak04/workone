@@ -1,4 +1,6 @@
 from functools import partial, reduce
+import sys
+import random
 
 
 def power(x, exponent):
@@ -84,3 +86,52 @@ def print_msg(msg):
 
 another = print_msg("Hello")
 another()
+
+# 11)
+def make_multiplier_of(n):
+    
+    
+    def multiplier(x):
+        return x * n
+    return multiplier
+
+
+times3 = make_multiplier_of(3)
+times5 = make_multiplier_of(5)
+print(times3(9))
+print(times5(3))
+print(times5(times3(2)))
+
+# 12)
+randomList = ['a', 0, 2]
+for entry in randomList:
+    try:
+        print("Запись", entry)
+        r = 1/int(entry)
+        break
+    except:
+        print("Oops!", sys.exc_info()[0], "произошло.")
+        print("Следующая запись.")
+        print()
+print("Взаимность", entry, "это", r)
+
+# 13)
+try:
+    num = int(input("Введите число: "))
+    assert num % 2 == 0
+except:
+    print("Число нечетное!")
+else:
+    reciprocal = 1/num
+    print(reciprocal, "no")
+    
+# 14)
+random.seed(4)
+random_number_1 = random.randint(1, 10)
+random_number_2 = random.randint(1, 10)
+print(random_number_1, random_number_2) 
+
+# 15)
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a is b)
