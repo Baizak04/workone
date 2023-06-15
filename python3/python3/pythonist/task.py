@@ -135,3 +135,21 @@ print(random_number_1, random_number_2)
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a is b)
+
+# 14)
+squares = [x**2 for x in range(1, 11)]
+
+# 15)
+my_list = [1, 2, 3, 4]
+for index, value in enumerate(my_list):
+    print(f"{index}: {value}")
+    
+# 16)
+scones = {
+    "Фрукты": 22,
+    "Пустая": 14,
+    "Корица": 4,
+    "Сыр": 21
+}
+scones["Вишня"] = 10
+print(scones)
