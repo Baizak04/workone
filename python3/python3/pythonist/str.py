@@ -59,3 +59,31 @@ if fullstring.find(substring) != -1:
     print("Язык программирование есть")
 else:
     print("Язык программирование нету")
+    
+# 9)
+def urlify(s):
+    s = s.strip().split(" ")
+    return ("%20").join(s)
+
+
+print(urlify("Dev's Battle "))
+
+# 10)
+str = "development"
+stringlength = len(str) 
+slicedString = str[stringlength::-1]  
+print(slicedString)
+
+# 11)
+str = "programming" # исходная строка
+reversedString=[]
+index = len(str) # вычисляем длину строки и сохраняем ее в переменной index
+while index > 0: 
+    reversedString += str[ index - 1 ] # сохраняем значение str[index-1] в reverseString
+    index = index - 1 # уменьшаем значение index на 1
+print(reversedString) # перевернутая строка
+
+# 12)
+str = 'python' 
+reversed=''.join(reversed(str))
+print(reversed)
