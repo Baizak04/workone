@@ -165,3 +165,45 @@ print(greeting)
 # 23)
 calculation = f"5 * 6 = {5 * 6}."
 print(calculation)
+
+# 24)
+str = "pythonist"
+print ("Исходная строка: " + str) 
+res_str = str.replace('t', '') 
+# Удаление всех 't' 
+print("Строка после удаления всех символов t: " + res_str) 
+# Удаление только первой t 
+res_str = str.replace('t', '', 1) 
+print ("Строка после удаления первого t: " + res_str)
+
+# 25)
+input_str = "pythonist"
+   
+# Выводим в консоль исходную строку
+print ("Исходная строка: " + input_str) 
+   
+result_str = "" 
+   
+for i in range(0, len(input_str)): 
+    if i != 3: 
+        result_str = result_str + input_str[i] 
+   
+# Выводим в консоль строку после удаления i-го элемента
+print ("Строка после удаления i-го элемента: " + result_str)
+
+# 26)
+str1 = "pythonist"
+print ("Исходная строка: " + str1) 
+# Удаляем элемент с индексом 3 
+# с помощью срезов и объединения
+res_str = str1[:3] +  str1[4:]
+print ("Строка после удаления символа: " + res_str)
+
+# 27)
+str = "pythonist"
+print("Исходная строка: " + str) 
+   
+# Удаление элемента с индексом 2 
+# с помощью join() и генератора списков 
+res_str = ''.join([str[i] for i in range(len(str)) if i != 2]) 
+print("Строка после удаления символа: " + res_str)
