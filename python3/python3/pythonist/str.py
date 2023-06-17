@@ -156,3 +156,12 @@ print(c1)
 word = "Hello"
 firstThree = word[0:3]
 print(firstThree)
+
+# 22)
+name = "Alice"
+greeting = f"Hello, {name}! How are you doing?"
+print(greeting)
+
+# 23)
+calculation = f"5 * 6 = {5 * 6}."
+print(calculation)
