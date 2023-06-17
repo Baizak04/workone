@@ -1,6 +1,6 @@
 from re import search
 from collections import defaultdict
-
+import re
 
 
 # 1)
@@ -106,3 +106,53 @@ def check_pali(our_string):
 
 
 print(check_pali("Taco cat"))
+
+# 14)
+regexp = r"([a-zA-Z]+) (\d+)"
+match = re.search(regexp, "My son birthday is on July 20")
+if match != None:
+    print("Match at index %s, %s" % (match.start(), match.end()))   #This provides index of matched string
+    print("Full match: %s" % (match.group(0)))
+    print("Month: %s" % (match.group(1)))
+    print("Day: %s" % (match.group(2)))
+else:
+    print("The given regex pattern does not match")
+
+# 15)
+def world(any_string):
+    if any_string == "":
+        return any_string
+    else:
+        return world(any_string[1:]) + any_string[:1]
+    
+
+print(world("code"))
+
+# 16)
+any_string = "Python"
+rev_string = any_string[::-1]
+print(rev_string)
+
+# 17)
+fave_language = "Python"
+print("I like coding in " + fave_language + " the most")
+
+# 18)
+word = "hello"
+threeWords = word * 3
+print(threeWords)
+
+# 19)
+sentence = "This is just a test"
+testFound = "test" in sentence
+print(testFound)
+
+# 20)
+word = "Hello"
+c1 = word[0]
+print(c1)
+
+# 21)
+word = "Hello"
+firstThree = word[0:3]
+print(firstThree)
