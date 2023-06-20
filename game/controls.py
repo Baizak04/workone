@@ -17,3 +17,11 @@ def events(gun):
                     gun.mright = False
                 elif event.key == pygame.K_a:
                     gun.mleft = False
+                    
+                    
+def update(bg_color, screen, gun):
+    """обновление экрана"""
+    screen.fill(bg_color)
+    gun.output()
+    pygame.display.flip()
+        
