@@ -35,13 +35,13 @@ def update(bg_color, screen, gun, inos, bullets):
     pygame.display.flip()
         
         
-def update_bullets(bullets):
+def update_bullets(inoc, bullets):
     """Обновлять позиции пуль"""
     bullets.update()
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
-            
+    collisions = pygame.sprite.groupcollide(bullets, inoc, True, True)
             
 def update_inoc(inos):
     """Обновляет позицию инопришельцев"""
