@@ -1,11 +1,12 @@
-s = "hello world"
-print(len(s))
+# s = "hello world"
+# print(len(s))
 
 
-w = "hello world"
-exict = "Hello" in s
-print(exict)
+# w = "hello world"
+# exict = "Hello" in s
+# print(exict)
 
 
 
-print("google \n" *3)
+print("google \t" * 3)
+

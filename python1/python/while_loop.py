@@ -2,12 +2,11 @@
 #     фрагмент кода
 
 
-# while - пока
-# counter = 0
-# while True:
-#     print(counter)
-#     counter += 1       #counter = counter + 1
-    
+counter = 0
+while True:
+    print(counter)
+    counter += 1  #counter = counter + 1
+    break
     
 # sum = 0 
 # while sum < 20:
