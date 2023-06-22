@@ -18,3 +18,14 @@ myList = ["Bran", 11, 22, 33, "Stark", 22, 33, 11]
 del myList[2]
 print(myList)
 # del. С его помощью можно удалить несколько элементов из списка (указав диапазон индексов).
+
+# 5)
+my_list = [67, 2, 999, 1, 15]
+my_list.sort()
+print(my_list)
+
+# 6)
+names = ["Jessica", "Ben", "Carl", "Jackie", "Wendy"]
+print("Несортированный: ", names)
+names.sort(reverse=True)
+print("Сортированый: ", names)
