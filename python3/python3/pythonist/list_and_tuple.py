@@ -26,3 +26,38 @@ print(content)
 names = ("Jimmy","Timmy","John","Kate")
 print(names[2])
 print(type(names))
+
+# 8)
+programming_languages = ["Python","JavaScript","Java","C"]
+print(programming_languages[0])
+
+# 9)
+programming_languages = ["Python","JavaScript","Java","C"]
+programming_languages[2] = "Go"
+print(programming_languages)
+
+# 10)
+programming_languages = ["Python","JavaScript","Java","C"]
+programming_languages.append("C++")
+print(programming_languages)
+
+# 11)
+names = ["Cody","Dillan","James","Nick"]
+names.insert(2, "AA")
+print(names)
+
+# 12)
+programming_languages = ["Python","JavaScript"]
+more_programming_languages = ["Java","C"]
+programming_languages.extend(more_programming_languages)
+print(programming_languages)
+
+# 13)
+programming_languages = ["Python", "JavaScript", "Java", "C"]
+programming_languages.remove("Python")
+print(programming_languages)
+
+# 14)
+programming_languages = ["Python", "JavaScript", "Java", "C"]
+programming_languages.pop()
+print(programming_languages)
