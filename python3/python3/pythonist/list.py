@@ -29,3 +29,16 @@ names = ["Jessica", "Ben", "Carl", "Jackie", "Wendy"]
 print("Несортированный: ", names)
 names.sort(reverse=True)
 print("Сортированый: ", names)
+
+# 7)
+list_2 = [1, 2, 3, 4]
+list_1 = [5, 6, 7, 8]
+list_1.append(list_2)
+print(list_1)
+
+# 8)
+list_1 = [1,2,3,4,5]
+list_1.append('Happy')
+print(list_1)
+list_1.extend("hello")
+print(list_1)
