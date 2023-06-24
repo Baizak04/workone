@@ -42,3 +42,15 @@ list_1.append('Happy')
 print(list_1)
 list_1.extend("hello")
 print(list_1)
+
+class Tester:
+    def __init__(self, id):
+        self.id = str(id)
+        id = '224'
+        
+        
+temp = Tester(12)
+print(temp.id)
+    
+    
+    
