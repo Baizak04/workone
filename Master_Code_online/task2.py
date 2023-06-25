@@ -144,9 +144,77 @@ print(format())
 # Функция по умолчанию возвращает None
 
 # 19)
-print(int(11.0) == int('11.0'))
+# print(int(11.0) == int('11.0'))
 # Ошибка появляется в int(‘11.0’), поскольку int не умееть работать с такими значениями (float в виде строки)
 
 # 20)
 print(print('py'))
 # print(‘py’) -> выведет py и вернет None print(None) -> выведет None
+
+# 21)
+from random import random
+
+
+def func(x = random()):
+    return x
+
+
+print(func() == func())
+# Значения по умолчанию создаются только один раз и сохраняются в __defaults__.
+
+# 22)
+print(False + True)
+# False это 0, True это 1;w 0 + 1 =1
+
+# 23)
+number_set = {range(4)}
+print(number_set)
+# range это отдельный объект и он так и сохраняется внутрь множества. Чтобы получить {0, 1, 2, 3}
+
+# 24)
+a = {1, 2, 3, 1, 2}
+print(sorted(a))
+# Множества это набор уникальных значений, поэтому копии пропадут
+
+# 25)
+# v = {1, 2, 3}
+# print(a[1])
+# Нельзя брать значения по индексу из множества!
+
+# 26)
+try:
+    exit()
+except SystemExit:
+    print('OK')
+# exit() выбрасывает ошибку SystemExit, которая позволяет выйти из приложения
+
+# 27)
+a = ['1', '2', '3']
+print(sorted(a))
+# Строки сравниваются по позиции в ASCII
+
+# 28)
+number_one = [1, '2', 3]
+number_two = map(int, a)
+
+print(sorted(number_two) == sorted(number_two))
+# map это все тот же генератор, а значит пройтись по нему можно только один раз. В сравнении получаем [1, 2, 3] == [] -> False
+
+# 29)
+result = 0
+for x, y in zip(range(3), range(5)):
+    result += x + y
+    
+print(result)
+# Если хотя бы один из итераторов в zip <<закончится>>б то цикл прекратит свое выполнение
+
+# 30)
+def func():
+    try:
+        return True
+    finally:
+        return False
+    
+    
+print(func())
+# finally выполняется всегда и, в данном случае, заменяет возвращаемое значение. Если после finally, будет pass, то вернется True
