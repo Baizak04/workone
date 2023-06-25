@@ -162,19 +162,88 @@ print(func())
 # Поскольку finally выполняется всегда,  return 1 передает управление ему, а тот возвращает 2.
 
 # 20)
-class Test:
+# class Test:
     
-    def __init__(self, value):
-        self.value = value
+#     def __init__(self, value):
+#         self.value = value
         
         
-    def __str__(self):
-        return f'{self.value}'
+#     def __str__(self):
+#         return f'{self.value}'
     
     
-    def __add__(self, other):
-        return self.value + other
+#     def __add__(self, other):
+#         return self.value + other
     
     
-print(1 + Test(1))
+# print(1 + Test(1))
 # __add__() вызывается у int, а он не знает что делать с Test. Если мы напишем Test(1) + 1, то все сработает  и ответ будет 2.
+
+# 21)
+x, y = [], []
+x.append(y)
+y.append(x)
+print(x)
+# Здесь также указатель массива на себя, что превращается в [...]
+
+# 22)
+sum1 = 'Master Code Online'
+sum2 = 'Master Code Online'
+print(sum1 is sum2)
+# Python кэширует короткие строки, тем самым экономя память
+
+# 23)
+A = [1]
+B = (2,)
+C = {3}
+L = [*A, *B, *C]
+# Распаковка добавляет все элементы в список. Так как это синтаксический сахар, работает быстрее чем extend()
+
+# 24)
+print(type(type))
+# type считается прародителем всех типов
+
+# 25)
+# import logging
+
+
+# try:
+#     raise RuntimeError('FooBar')
+# except Exception:
+#     logging.exception('Exception')
+
+# 26)
+num = pow(2, 4)
+x = str(num)
+x = f'{num}'
+
+# 27)
+print([i + j for i in 'abs' for j in 'def'])
+
+# 28)
+def foo(i, x=[]):
+    x.append(i)
+    return x
+
+for i in range(3):
+    print(foo(i))
+
+# 29)
+def sum_one():
+    x = 15
+    print(x)
+    
+    
+x = 12
+sum_one()
+# Здесь z = 15 - локальная переменная, а x = 12  - глобальной переменной, поэтому в выводе получается 15.
+
+# 30)
+# i = 1
+
+# while True:
+#     if i%2 == 0:
+#         break
+#     print(i)
+#     i +=2
+# Цикл будет бесконечным, потому что  i никогда не станет четным.
