@@ -165,3 +165,149 @@ print(x)
 # # 2. ['AB', 'CD']
 # # 3. ['None', 'None']
 # # 4. Ничто из перечисленного
+
+
+# #11код
+
+# x = [i ** +1 for i in range(3)]
+# print(x)
+
+# # i** +1 Оценивается как (i)**(+1)
+
+# # 1. [0, 1, 2]  *
+# # 2. [1, 2, 5]
+# # 3. [1, 2, 3]
+# # 4. Error
+
+
+# #12 код
+
+x = 10.0
+y = (x < 100.0) and isinstance(x, float)
+print(y)
+
+# Обе части - (x < 100.0) и isinstance(x, float) - правдивы,т.e.равны True.
+# Следовательно,все выражение оценивается как True.
+
+# # 1. False
+# # 2. True  *
+# # 3. 1
+# # 4. 0
+
+
+# #13 код
+
+s = 'foo'
+t = 'bar'
+print('bar' in 2 * (s + t))
+
+# Оператор + объудиняет строки,а оператор*умножает.Результат 2*(s + t) - "foorbarfoorbar",
+# a в этой строке содержится подстрока "barf.
+
+# # 1. True *
+# # 2. False
+# # 3. Error
+# # 4. Ошибка
+
+
+# #14 код
+
+f = None
+for i in range (5):
+    with open("data.txt", "w") as f:
+        if i > 2:
+            break
+print(f.closed)
+
+# Оператор WITH при использовании с открытым файлом гарантирует,что объект файла будет закрыт при выходе из блока with.
+
+# # 1. True  *
+# # 2. False
+# # 3. None
+# # 4. Error
+
+
+# # 15 код 
+
+dict1 = {"name": "Mike", "salary": 8000}
+temp = dict1.get("age")
+print(temp)
+
+# # # ???
+
+# # 1. Error
+# # 2. None   *
+# # 3. Mike
+# # 4. 8000  
+
+
+
+# # 16 код
+ 
+a = [1,2,3]
+print(a[1]) 
+
+# # # ???
+
+# # 1. 1
+# # 2. 2  *
+# # 3. 3 
+# # 4. Ошибку   
+
+
+# # 17 код 
+
+b = [1,2] == (1,2)
+print(b)
+
+# # # ???
+
+# # 1. True
+# # 2. False  *
+# # 3. Ошибку
+# # 4. 1,2
+
+
+# #18 код 
+ 
+b = set("ppp")
+print(str(b) == "p")
+
+# # #???
+
+# # 1. True
+# # 2. False  *
+# # 3. Ошибку
+# # 4. "ppp"
+
+
+# # 19 код 
+
+a = 10
+print(b)
+
+# # #???
+
+# # 1. 10
+# # 2. TypeError
+# # 3. ValueError
+# # 4. NameError  *
+
+
+
+# # 20 код
+
+try:
+    b = 1 / 0
+except ZeroDivisionError:
+    b = 0
+print(b)
+
+# #  ???
+
+# # 1. 1
+# # 2. 0  *
+# # 3. Ошибку
+# # 4. ZeroDivisionError
+
+
