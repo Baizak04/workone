@@ -23,3 +23,6 @@ print(letter)
 # 6)
 msg = "hello" * 99
 print(msg)
+
+# 7)
+print(help(str))
