@@ -19,12 +19,13 @@ class DlgMain(QDialog):
         #     QMessageBox.information(self, '', "You've clicked 'Yes' button")
         # elif res == QMessageBox.No:
         #     QMessageBox.information(self, '', "You've clicked 'No' button")
-
         msgDiskFull = QMessageBox()
         msgDiskFull.setText('Your hard drive is almostfull')
         msgDiskFull.setDetailedText('Please free up disk space')
         msgDiskFull.setIcon(QMessageBox.Information)
-        msgDiskFull.setWindowTitle()
+        msgDiskFull.setWindowTitle('Full Drive')
+        msgDiskFull.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+        msgDiskFull.exec_()
 
 
 if __name__ == '__main__':
