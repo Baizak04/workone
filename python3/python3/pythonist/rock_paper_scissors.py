@@ -37,3 +37,6 @@ while True:
 print("Вы выиграли", user_wins, "раз")
 print("Компьютер выиграл", computer_wins, "раз")    
 print("До свидания")
+
+
+
