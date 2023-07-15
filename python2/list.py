@@ -11,3 +11,8 @@ print(a)
 a = ['s', 'd', 'f']
 a.append('a')
 print(a)
+
+my_list = []
+print(my_list)
+my_list.append(1)
+print(my_list)
