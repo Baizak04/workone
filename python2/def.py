@@ -34,10 +34,20 @@ myfunc_two(fruit='apple')
 
 lst = [1, 2, 3]
 
-def name_one(*args, **kwargs):
-    for i in args:
-        print(i)
-    for k, v in kwargs:
-        print(k, v)
+# def name_one(*args, **kwargs):
+#     for i in args:
+#         print(i)
+#     for k, v in kwargs:
+#         print(k, v)
         
-name_one(1, 2, 3, 4, k = 12, z = 10)
+# name_one(1, 2, 3, 4, k = 12, z = 10)
+
+
+def foo(*args):
+    res = 0
+    for n in args:
+        res += n
+    print(res)
+
+
+foo(1, 2, 3, 4, 5)
