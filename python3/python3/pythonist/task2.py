@@ -1,0 +1,15 @@
+lst = [1, 1, 1, 1, 1, 1, 1]
+print(lst)
+lst.append('Строка')
+print(lst)
+lst[4] = 189
+print(lst)
+lst.append(['a', 'b', 'a', 'hello'])
+print(lst)
+lst[-3] = (1, 6, 89)
+print(lst)
+print(lst[0])
+lst.remove(1)
+print(lst)
+lst.count('Строка')
+print(lst)
