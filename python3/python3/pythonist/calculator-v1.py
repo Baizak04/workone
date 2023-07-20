@@ -2,6 +2,21 @@ from colorama import init
 from colorama import Fore, Back, Style
 
 init()
+def calc(a, b, operation):
+    
+    result = 'Операция не поддерживается'
+    if operation == '+':
+        result = a + b
+    elif operation == '-':
+        result = a - b
+    elif operation == '*':
+        result = a + b
+    elif operation == '/':
+        if b is not 0:
+            result = a / b
+            
+    return result
+
 
 what = input("Что делаем (+, -): ")
 
