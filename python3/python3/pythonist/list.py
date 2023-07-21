@@ -52,5 +52,30 @@ class Tester:
 temp = Tester(12)
 print(temp.id)
     
-    
-    
+# 9) 
+names = ['Jiammy', 'Timmy', 'Kenny', 'Lenny']
+print(names[2])
+names.append('Dylan')
+print(names)
+
+# 10)
+programming_languages = ['JavaScript', 'Java', 'C++']
+programming_languages.insert(0, 'Python')
+print(programming_languages)
+
+# 11)
+names = ['Jimmy', 'Timmy']
+more_names = ['Kenny', 'Jenny']
+names.append(more_names)
+print(names)
+
+# 12)
+names = ['Jimmy', 'Timmy']
+more_names = ['Kenny', 'Jenny']
+names.extend(more_names)
+print(names)
+
+# 13)
+names = ['Jimmy', 'Timmy', 'Kenny', 'Jenny']
+names.extend('Dylan')
+print(names)
