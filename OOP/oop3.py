@@ -11,10 +11,11 @@ class Car:
         self.wheels = wheels
     
 toyota = Car()
-honda = Car
+honda = Car()
 
 print(toyota.wheels)
 print(honda.wheels)
 
 toyota.move()
 toyota.change(3)
+honda.move()
