@@ -20,3 +20,8 @@ print(x[1][2])
 
 sample = [12, 32, 21, 24, 65]
 print(sample[0:2])
+
+speaker = "Алексей"
+duration = 60
+duration_hours = round(duration/120, 3)
+print(f"Наш эфир будет длиться {duration} минут/ {duration_hours} часов. Эфир будет ввести спикер {speaker}")
