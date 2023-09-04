@@ -42,3 +42,15 @@ if some_list:
     print("Здесь что-то есть")
 else:
     print("Эй, он пустой!")
+    
+letter = 'o'
+if letter == 'a' or letter == 'e' or letter == 'i' \
+    or letter == 'o' or letter == 'u':
+    print(letter, 'гласный')
+else:
+    print(letter, 'не является гласным')
+    
+vowels = 'aeiou'
+letter = 'i'
+if letter in vowels:
+    print(letter, 'гласный')
