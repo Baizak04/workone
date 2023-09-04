@@ -25,3 +25,10 @@ speaker = "Алексей"
 duration = 60
 duration_hours = round(duration/120, 3)
 print(f"Наш эфир будет длиться {duration} минут/ {duration_hours} часов. Эфир будет ввести спикер {speaker}")
+
+world = "'Google'"
+print(world)
+
+company1 = "Face"
+company2 = "book"
+print(company1 + company2)
