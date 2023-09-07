@@ -32,3 +32,12 @@ print(world)
 company1 = "Face"
 company2 = "book"
 print(company1 + company2)
+
+mystring = '10 awesome python tricks'
+print(mystring.title())
+
+number = 50
+print(isinstance(number, int))
+
+company = "Dev's Battle"
+print(company.rjust(len(company)+10, '*'))
