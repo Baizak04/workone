@@ -58,3 +58,43 @@ elif not(is_male) and is_tall:
     print('Вы не являетесь мужчиной, но имеете высокий рост')
 else:
     print('Вы либо не мужчина, либо не высокого роста, либо и то и другое вместе')
+    
+a = 10
+b = 25
+c = 17
+
+if a < b and c < b:
+    print(b)
+elif a < c and c < a:
+    print(a)
+elif a < c and b < c:
+    print(c)
+    
+
+a = 10
+b = 25
+c = 17
+max = a
+if b > max:
+    max = b
+    if c > max:
+        max = c
+print(max)
+
+a = 10
+b = -25
+c = -17
+max = a
+if b > max:
+    max = b
+    if c > max:
+        max = c
+print(max)
+
+for i in 'hello world':
+    if i == a:
+        print('Буква существует')
+    else:
+        print('Буква а в строке нету')
+        break
+    
