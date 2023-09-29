@@ -141,3 +141,21 @@ def sum(*args):
     print('sum is', s)
     
 sum(1, 4, 7)
+
+def fibonacci(n):
+    def step(a, b):
+        return b, a + b
+    a, b = 0, 1
+    for i in range(n):
+        a, b = step(a, b)
+    return a
+print(fibonacci(6))
+
+
+def _f():
+    yield 'key1', 10
+    yield 'key2', 20
+    
+def f(): return dict(_f())
+
+print(f())
