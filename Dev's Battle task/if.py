@@ -98,3 +98,91 @@ for i in 'hello world':
         print('Буква а в строке нету')
         break
     
+    
+a = {True: '1', 1: False}
+
+if a[1] == False:
+    print(True)
+else:
+    print(False)
+    
+if (type(6.0)) is float \
+    and 6 == 6.0:
+        print(False)
+else:
+    print(True)
+    
+a = None
+if a is not None and len(a) > 0:
+    print(True)
+else:
+    print(False)
+    
+    
+
+x, y, z = 0, 1, 0
+if x == 1 or y == 1 or z == 1:
+    print('пройдено')
+else:
+    print('не пройдено')
+    
+    
+x, y, z = 0, 1, 0
+if 2 in (x, y, z):
+    print('пройдено')
+else:
+    print('не пройдено')
+
+
+x, y, z = 10, 1, 2
+if x or y or z:
+    print('пройдено')
+else:
+    print('не пройдено')
+
+
+x, y, z = 10, 1, 2
+if any((x, y, z)):
+    print('пройдено')
+else:
+    print('не пройдено')
+    
+a = 345
+b = 14
+
+if a % b == 0:
+    print("Yes")
+else:
+    print('No, the remainder is', a % b)
+    
+    
+x = -34
+y = -10
+
+if x > 0 and y > 0:
+    print('I')
+elif x < 0 and y > 0:
+    print('II')
+elif x < 0 and y < 0:
+    print('III')
+elif x > 0 and y < 0:
+    print('III')
+elif x == 0 and y == 0:
+    print('IV')
+elif x == 0:
+    print('X')
+elif y == 0:
+    print('Y')
+    
+    
+year = 2023
+if year % 4 != 0:
+    print('usual year')
+elif year % 100 == 0:
+    if year % 400 == 0:
+        print("leap year")
+    else:
+        print('usual "year"')
+    
+else:
+    print('leap "year"')
