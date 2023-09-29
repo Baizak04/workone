@@ -52,29 +52,6 @@ my_list = [10, 20, 30, 40, 50]
 my_list.reverse()
 print(my_list)
 
-x, y, z = 0, 1, 0
-if x == 1 or y == 1 or z == 1:
-    print('пройдено')
-else:
-    print('не пройдено')
-    
-    
-x, y, z = 0, 1, 0
-if 2 in (x, y, z):
-    print('пройдено')
-else:
-    print('не пройдено')
 
-
-x, y, z = 10, 1, 2
-if x or y or z:
-    print('пройдено')
-else:
-    print('не пройдено')
-
-
-x, y, z = 10, 1, 2
-if any((x, y, z)):
-    print('пройдено')
-else:
-    print('не пройдено')
+a = list(map(pow, [1, 2, 3], [2, 3, 4]))
+print(a)
