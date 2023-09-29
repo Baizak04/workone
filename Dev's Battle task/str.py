@@ -25,3 +25,8 @@ print('barf' in 2 * (s + t))
 
 # print(ord('foo'))
 
+a = iter("a")
+print(a)
+
+a = iter({1})
+print(a)
