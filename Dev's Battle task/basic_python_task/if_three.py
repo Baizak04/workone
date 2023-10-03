@@ -19,3 +19,18 @@ for element in my_list:
         print('Это единичка')
     else:
         print('Это не единичка')
+        
+        
+        
+from math import isnan
+
+
+c = float('nan')
+i = 0
+if c == float('nan'):
+    i += 1
+if c is float('nan'):
+    i += 1
+if isnan(c):
+    i += 1
+print(i)
