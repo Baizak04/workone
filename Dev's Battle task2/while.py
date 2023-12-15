@@ -1,13 +1,13 @@
 i = 5
-# while i < 8:
-#     print(i)
-#     i = i + 1
+while i < 8:
+    print(i)
+    i = i + 1
     
 # # 2)
-# i = 5
-# while i < 8:
-#     i = i + 1
-#     print(i)
+i = 5
+while i < 8:
+    i = i + 1
+    print(i)
     
 # # 3) 
 def f1(n):
