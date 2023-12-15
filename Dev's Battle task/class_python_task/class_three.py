@@ -104,30 +104,30 @@
 # _ = x.f(), x.f()
 
 
-# class A:
-#     def f(self):
-#         print('A', end="")
+class A:
+    def f(self):
+        print('A', end="")
 
-# class B(A):
-#     def f(self):
-#         print('B', end="")
-#         super().f()
-#         A.f(self)
+class B(A):
+    def f(self):
+        print('B', end="")
+        super().f()
+        A.f(self)
         
-# class C(A):
-#     def f(self):
-#         print("C", end="")
-#         super().f()
-#         A.f(self)
+class C(A):
+    def f(self):
+        print("C", end="")
+        super().f()
+        A.f(self)
         
-# class D(B, C):
-#     def f(self):
-#         print("D", end="")
-#         super().f()
+class D(B, C):
+    def f(self):
+        print("D", end="")
+        super().f()
 
 
-# d = D()
-# d.f()
+d = D()
+d.f()
 
 
 
