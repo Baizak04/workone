@@ -1,53 +1,53 @@
-# # 1) 
-# # a = 4
-# # b = 11
-# # c = (a + b) % 11
-# # print(c)
+# # # 1) 
+a = 4
+b = 11
+c = (a + b) % 11
+print(c)
 
-# # 2)
-# def some_function():
-#     a = 4
-#     b = 11
-#     c = (a + b) % 11
-#     c = (a + b) % 11
-#     print(c)
-#     print(c)
+# # # 2)
+def some_function():
+    a = 4
+    b = 11
+    c = (a + b) % 11
+    c = (a + b) % 11
+    print(c)
+    print(c)
     
-# some_function()
-# some_function()
+some_function()
+some_function()
 
-# # 3)
-# f = 66
+# # # # 3)
+f = 66
 
-# def ex1():
-#     f = 55
-#     print(f)
+def ex1():
+    f = 55
+    print(f)
     
 
-# ex1()
+ex1()
 
-# # 4)
-# k = 99
+# # # 4)
+k = 99
 
-# def ex2():
-#     global k
-#     k = 88
-#     print(k)
+def ex2():
+    global k
+    k = 88
+    print(k)
     
     
-# ex2()
-# print(k)
+ex2()
+print(k)
 
-# # 5)
-# def ex3(a, b):
-#     c = (a + b) - 128
-#     print(c)
+# # # 5)
+def ex3(a, b):
+    c = (a + b) - 128
+    print(c)
 
-# ex3(3, 4)
-# ex3(122, 4)
-# ex3(1111, 2222)
+ex3(3, 4)
+ex3(122, 4)
+ex3(1111, 2222)
 
-# 6)
+# # # 6)
 def ex3(a, b):
     c = (a + b) - 128
     print(c)
@@ -56,7 +56,7 @@ def ex3(a, b):
 m = 1000 + ex3(22, 23)
 print(m)
 
-# 7)
+# # 7)
 def t2():
     f = '<usb'
     
@@ -71,7 +71,7 @@ def t2():
     
 t2()
 
-# 8)
+# # 8)
 
 def t4():
     color = 2
@@ -89,7 +89,7 @@ def t4():
 t4()
 
 
-# 9)
+# # 9)
 
 def t5():
     user = 'Baizak'
@@ -99,5 +99,4 @@ def t5():
         print('welcome')
     else:
         print('wrong')
-        
 t5()
