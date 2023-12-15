@@ -11,7 +11,7 @@ a = a + 's' ' ' + b
 print(a)
 
 # a = 9.1
-# b = "Python"
+# b = "Adidas"
 # print(len(a) + len(b))
 
 # a = 9.1
