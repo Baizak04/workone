@@ -28,7 +28,7 @@ def f2():
     
 f2()
 
-
+# 4)
 def f3():
     foo = [1, 32, 33, 2, 31]
     max = foo[0]
@@ -42,3 +42,7 @@ def f3():
 
 f3()
 
+# 5)
+pow_args = [(2, 3), (12, 4)]
+bases, exponents = zip(*pow_args)
+print(bases) 
